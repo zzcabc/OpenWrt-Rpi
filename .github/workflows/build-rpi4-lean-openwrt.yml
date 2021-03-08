@@ -11,9 +11,9 @@ name: Build Raspberry Pi 4 Lean's OpenWrt
 on:
   repository_dispatch:
     types: [lean, rpi4]
-  workflow_dispatch:
-  schedule:
-    - cron: 0 18 * * *
+  workflow_dispatch: 
+  watch:                     # 监视操作
+    types: started 
 #  watch:
 #    types: started
 
